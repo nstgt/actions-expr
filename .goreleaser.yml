@@ -10,6 +10,7 @@ builds:
       - -X github.com/prometheus/common/version.Version={{.Version}}
       - -X github.com/prometheus/common/version.Revision={{.ShortCommit}}
       - -X github.com/prometheus/common/version.Branch={{.Branch}}
+      - -X github.com/prometheus/common/version.BuildDate={{.Date}}
 archives:
   - replacements:
       linux: Linux
